@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Channel Analysis</title>
+</head>
+<body>
+    <h1>YouTube Channel Analysis</h1>
+    <form action="{{ url_for('process_youtube_form') }}" method="POST">
+        <label for="channel_id">Enter YouTube Channel ID:</label>
+        <input type="text" id="channel_id" name="channel_id" required>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
